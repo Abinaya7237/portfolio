@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+   
+   
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="WhatsApp Image 2025-01-05 at 8.29.49 PM (3).jpeg" alt="Your Photo" class="profile-photo">
+                <h1>Abinaya</h1>
+                <p>A Final year B.Tech Student</p> 
+    
+            <div class="icons">
+                <a href="https://linkedin.com/in/kabinaya54" target="blank">
+                    <img src="social-media.png.210x158.webp" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/Abinaya7237" target="blank">
+                    <img src="github.webp" alt="GitHub">
+                </a>
+                <a href="https://drive.google.com/file/d/1Um-yGK6Zj_8ikzrVNw1J0cMumC-zgiG8/view?usp=drivesdk" target="_blank">
+                    <img src="resume.webp" alt="Resume">
+                </a>
+            </div>
+        </header>
+        
+            
+            <nav>
+                <ul>
+                    <li><a href="#Summary">Summary</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                </ul>
+            </nav>
+            
+            
+        
+
+        <section id="Summary">
+            <h2>About</h2>
+            <p>Enthusiastic and dedicated Final-year B.Tech student seeking opportunities to apply theoretical knowledge in practical
+                environment. I am Excited about the opportunity to contribute my enthusiasm. A quick Learner and proactive team
+                member, I am Committed to continuous growth and excited about the possibilities the lie ahead in my career journey.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>CREDIT CARD FRAUD DETECTION</h3>
+                <p><strong>Description:</strong> A Kaggle project to detect fraudulent credit card transactions using AI.</p>
+                <p><strong>Technologies Used:</strong> Python, Machine Learning, Data Visualization</p>
+                <h3>CHOCOLATE SALES APP</h3>
+                <p>
+                    <strong>Description:</strong> •
+                    Build a mobile application to streamline the sales process for a chocolate company, allowing sales representative 
+                   to efficiently manage orders and customer interactions. </p>
+                   <P><strong> Miro, Figma, Penpot</strong>
+                </p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience">
+                <h3>Intern at Emglitz Technologies</h3>
+                <p><strong>Duration:</strong> 2 Months</p>
+                <p><strong>Responsibilities:</strong> Worked on IoT software development.</p>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>B.Tech (AI & DS)</strong></p>
+            <p>University: V.S.B College Of Engineering Technical Campus</p>
+            <p>Graduation Year: 2025</p>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-list">
+                    <div class="skill">
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li>Communication</li>
+                            <li>Teamwork</li>
+                            <li>Problem-solving</li>
+                        </ul>
+                    </div>
+                    <div class="skill">
+                        <h3>Technical Skills</h3>
+                        <div class="skill-bar">
+                            <p>Core Java</p>
+                            <div class="progress"><span style="width: 90%"></span></div>
+                        </div>
+                        <div class="skill-bar">
+                            <p>Python</p>
+                            <div class="progress"><span style="width: 70%"></span></div>
+                        </div>
+                        <div class="skill-bar">
+                            <p>HTML & CSS</p>
+                            <div class="progress"><span style="width: 85%"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>The Modern Python Bootcamp - Udemy</li>
+                <li>Introduction to Artificial Intelligence - Simplilearn</li>
+                <li>Data Science for Engineers - NPTEL</li>
+                <li>Networking and Deep Learning - Great Learning</li>
+            </ul>
+        </section>
+
+        <footer>
+            <div class="container">
+                <ul class="contact-icons">
+                    <li><h3>Contact</h3></li>
+                    <li><img src="icons8-gmail-48.png" alt="Email"> kabinaya205@gmail.com</li>
+                    <li><img src="icons8-phone-48.png" alt="Phone"> +91 9042712609</li>
+                </ul>
+            </div>
+        </footer>
+
+
+</body>
+    <script>
+        // Intersection Observer for fade-in sections
+        const sections = document.querySelectorAll('section');
+
+        const options = {
+            root: null,
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target);
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</html>
